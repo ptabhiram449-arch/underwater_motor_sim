@@ -1,0 +1,9 @@
+motor_sim_node:
+  ros__parameters:
+    thruster_separation: 0.30   # m, distance between left and right thruster
+    max_linear_speed: 1.5       # m/s that maps to max_rpm
+    max_rpm: 3000.0             # RPM limit of each motor
+    time_constant: 0.4          # s, first-order motor response
+    max_accel_rpm_s: 6000.0     # RPM/s, acceleration limit
+    update_rate_hz: 50.0        # simulation / telemetry rate
+    cmd_timeout: 0.5            # s, motors stop if no cmd_vel for this long
